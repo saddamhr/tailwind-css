@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,9 +7,11 @@
     <title>My GitHub Profile</title>
     <link rel="stylesheet" href="./output/tailwind.css" />
   </head>
-  <body class="h-screen flex items-center justify-center bg-gray-100">
+  <body
+    class="h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900"
+  >
     <div
-      class="max-w-sm mx-auto p-8 bg-white rounded-xl shadow-md space-y-2 sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6"
+      class="max-w-sm mx-auto p-8 bg-white rounded-xl shadow-md space-y-2 sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6 dark:bg-gray-800 sm:dark:hover:bg-gray-700"
     >
       <img
         class="h-24 mx-auto rounded-full ring-4 ring-green-400 sm:max-0 sm:flex-shrink-0 transform hover:scale-105 duration-500"
@@ -18,15 +20,15 @@
       />
       <div class="text-center space-y-2 sm:text-left">
         <div class="space-y-0.5">
-          <p class="text-lg text-black font-semibold">Md. Saddam Hossain</p>
-          <p class="text-gray-500 font-medium">Explore my GitHub</p>
+          <p class="text-lg text-black font-semibold dark:text-gray-300">
+            Md. Saddam Hossain
+          </p>
+          <p class="text-gray-500 font-medium dark:text-gray-400">
+            Explore my GitHub
+          </p>
         </div>
-        <button
-          target="_blank"
-          class="px-4 py-1 border-purple-200 rounded-full text-sm text-purple-600 font-semibold hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
-        >
-          Visit now
-        </button>
+        <button class="btn btn-purple">Visit now</button>
+        <button target="_blank" class="btn btn-green ml-2">Website</button>
       </div>
     </div>
   </body>
